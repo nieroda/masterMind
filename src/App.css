@@ -1,0 +1,112 @@
+
+
+.centerApp {
+  height: 100vh;
+  background-color: #FAEBD7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.rightApp {
+  margin-left: 20px;
+}
+
+/* .btn {
+  padding: 15px 30px 15px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn:active {
+  box-shadow: none;
+
+} */
+
+.table {
+  background-color: blue;
+  border: 15px solid blue;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.tableItem {
+  border-radius: 100%;
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.codeBreaker {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.codeLine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #D58F6D;
+  min-width: 50vw;
+  min-height: 5vh;
+}
+
+.codeHole {
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.codeInBox {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.codeHint {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.btn {
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  margin: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn:active {
+  box-shadow: none;
+}
