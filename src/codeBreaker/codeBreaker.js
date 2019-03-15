@@ -103,6 +103,11 @@ class CodeBreaker extends React.Component<{}, State> {
             gameHintArray.push("red");
         }
 
+        if (numExactMatch === 4) {
+            alert("You Won!");
+            window.location.reload();
+        }
+
         for (let i = numExactMatch + numColorMatch; i < 4; i++) {
             gameHintArray.push(null)
         }
@@ -119,6 +124,11 @@ class CodeBreaker extends React.Component<{}, State> {
             return item
         })
 
+        if (currentRowState === 0) {
+            alert("You Lost :(")
+            window.location.reload();
+        }
+
         currentRowState -= 1
         this.setState({
             gameHint: gameHintCopy,
@@ -127,7 +137,9 @@ class CodeBreaker extends React.Component<{}, State> {
     }
 
     chooseColors() : Array<Color> {
-        return Array(4).fill(null).map<Color>(() => colorMap[Math.floor(Math.random() * 4)])
+        let chosenColors = Array(4).fill(null).map<Color>(() => colorMap[Math.floor(Math.random() * 4)])
+        console.log(`Chosen Colors: ${chosenColors}`)
+        return chosenColors;
     }
 
     render() {
